@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>coffeestore 메뉴판입니다.</p><br>
+    <table>  
+    <% for(i=0; i < query[0].length; i++){ %>
+        NAME : <%= query[0][i].menuname %>, 
+        PRICE : <%= query[0][0][i].menuprice %>
+    <% } %>
+    </table>
+   
+</body>
+</html>
